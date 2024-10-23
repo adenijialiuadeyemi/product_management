@@ -17,7 +17,7 @@ This project is part of my **Internpulse internship**, where I was tasked with b
 - **Express.js**: Framework for building the API.
 - **MongoDB**: NoSQL database for storing product data.
 - **Mongoose**: MongoDB Object Data Modeling (ODM) for better interaction with the database.
-- **dotenv**: For managing environment variables.
+- **config.js**: For managing environment variables.
 - **Jest**: JavaScript testing framework for unit tests.
 - **Supertest**: HTTP assertions for API testing.
 
