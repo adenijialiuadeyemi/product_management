@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "type": "module",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",  
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "build": "echo 'No build step required'"
   },
   "keywords": [],
   "author": "Adeniji Aliu Adeyemi",
@@ -16,5 +17,8 @@
     "mongodb": "^6.10.0",
     "mongoose": "^8.7.2",
     "nodemon": "^3.1.7"
+  },
+  "engines": {
+    "node": "16.x" 
   }
 }
