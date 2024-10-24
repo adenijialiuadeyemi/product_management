@@ -1,8 +1,9 @@
-import express from "express"
+//import express from "express"
 import { PORT, mongoDbURL } from './config.js'
 import mongoose from "mongoose";
 import productsRoute from "./routes/productsRoute.js"
 
+const express = require("express");
 //creating the web server
 const app = express();
 
