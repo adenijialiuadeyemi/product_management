@@ -1,5 +1,5 @@
 import express from "express"
-//import { PORT, mongoDbURL } from './config.js'
+import { PORT, mongoDbURL } from './config.js'
 import mongoose from "mongoose";
 import productsRoute from "./routes/productsRoute.js"
 
@@ -16,7 +16,7 @@ app.get("/", (req,res)=>{
 
 app.use("/product", productsRoute)
 
-mongoose.connect(mongoDbURL)
+mongoose.connect(mongoDbURL, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(()=>{
         app.listen(PORT, ()=>{
             console.log(`Server running at the address: http://127.0.0.1:${PORT}`)
