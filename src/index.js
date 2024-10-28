@@ -1,5 +1,5 @@
 import express from "express"
-import { PORT, mongoDbURL } from 'config.js'
+import { PORT, mongoDbURL } from './config.js'
 import mongoose from "mongoose";
 import productsRoute from "./routes/productsRoute.js"
 
